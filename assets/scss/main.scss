@@ -1,0 +1,27 @@
+@import "theme/vars";
+@import "theme/resets";
+@import "theme/breakpoints";
+@import "theme/typography";
+
+
+@import "components/buttons";
+@import "components/header";
+@import "components/block_content";
+@import "components/tech-i-love";
+@import "components/flutter-experiments";
+@import "components/footer";
+
+@import "views/home";
+@import "views/project-page";
+@import "views/web-project-page";
+
+.wrapper{
+    
+    margin: 0 auto;
+
+    width: 100%;
+
+    padding: 0 15px;
+
+    max-width: $max_width;
+}

@@ -1,0 +1,63 @@
+#home{
+
+    padding-top: 100px;
+
+    .hero{
+
+        min-height: 74vh;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-around;
+
+        .avatar{
+
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 200px;
+            border: 3px solid;
+
+            img{
+
+                height: 100%;
+
+            }
+
+        }
+
+        
+
+        @include mobile{
+
+            justify-content: flex-start;
+
+            flex-direction: column;
+
+            margin-bottom: 30px;
+
+            min-height: 0px;
+
+            .avatar{
+                
+                width: 130px;
+
+                height: 130px;
+
+                margin-bottom: 30px;
+
+            }
+
+        }
+
+    }
+
+    .web-development{
+
+        margin-top: 50px;
+
+    }
+
+}

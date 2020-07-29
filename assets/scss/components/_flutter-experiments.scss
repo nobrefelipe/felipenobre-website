@@ -1,0 +1,239 @@
+.flutter-experiments{
+
+    float: left;
+
+
+}
+
+
+
+
+
+.sticky-content{
+
+    float: left;
+
+    min-width: 250px;
+
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    padding: 20px;
+
+    margin: 15px;
+
+    p{ display: none;}
+
+    h2{ font-size: 22px; line-height: 24px; margin: 20px 0 30px 0; text-align: center;}
+
+    .button{ margin-top: auto;}
+    
+    .block-content{ align-items: center; height: 100%;}
+
+    .cnt{flex:1;}
+
+    @include mobile{
+
+        min-width: 70vw;
+
+    }
+
+    &-wrapper{
+
+        float: left;
+
+        width: 100%;
+
+        margin-top: 30px;
+
+        .wrapper{
+            
+            display: flex;
+
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+
+        }
+
+        @include mobile{
+
+            overflow: scroll;
+
+            padding: 0;
+
+            .wrapper{
+
+                padding: 0px;
+
+                justify-content: flex-start;
+
+                flex-wrap: nowrap;
+
+            }
+
+        }
+
+    }
+
+
+    .img{
+        
+        float: left;
+
+        position: static;
+
+        height: 240px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        img{
+            height: 100%;
+        }
+    }
+
+
+}
+
+/*
+.sticky-content{
+
+    float: left;
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+
+    &-wrapper{
+
+        float: left;
+
+        width: 100%;
+
+        @include mobile{
+
+            overflow: scroll;
+
+            padding: 0 20px;
+
+            .wrapper{
+
+                display: flex;
+
+                padding: 20px 0px;
+
+            }
+
+        }
+
+    }
+
+
+    @include mobile{
+
+        min-width: 73vw;
+        
+       flex-direction: column;
+
+       justify-content: flex-start;
+
+       box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+       height: auto;
+
+       padding: 20px;
+
+       margin: 0 30px 0 0;
+
+       p{ display: none;}
+
+       h2{ font-size: 22px; margin: 20px 0 30px 0; text-align: center;}
+
+       .button{ margin-top: auto;}
+       
+       .block-content{ align-items: center; height: 100%;}
+       
+
+
+    }
+
+
+    .block-content{
+
+        max-width: 500px;
+    }
+
+
+    .img{
+        
+        float: left;
+
+        position: sticky;
+        
+        top: calc((100vh - 600px) / 2 );
+
+        height: 600px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        img{
+            height: 100%;
+        }
+
+
+        @include mobile{
+            
+            position: static;
+
+            height: 240px;
+ 
+         }
+
+    }
+
+    .cnt{
+        float: left;
+
+        flex: 0.7;
+
+        --multiplier: -0.5;
+        --translate: calc(var(--scroll-amount) * var(--multiplier) * 1px);
+        transform: translateY(var(--translate));
+
+        @include mobile{
+            
+            --multiplier: 0;
+
+            flex: 1;
+ 
+         }
+    }
+
+}
+
+*/

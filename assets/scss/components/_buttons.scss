@@ -1,0 +1,119 @@
+.button{
+
+    background-color: black;
+
+    padding: 15px 0 13px 0;
+
+    width: 200px;
+    
+    text-align: center;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    border: 2px solid transparent;
+
+    text-transform: uppercase;
+
+    transition: all .3s ease-in;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 10px  -5px rgba(0,0,0,0.3), 0 -8px 10px  -5px rgba(0,0,0,0.3);
+
+
+    &.big{
+
+        font-size: 18px;
+
+        width: 240px;
+
+        padding: 20px 0 18px 0;
+
+    }
+
+    &:hover{
+
+        border-color: $primary_color;
+
+        background-color: transparent;
+
+        color: black;
+        
+
+    }
+
+}
+
+.contact-buttons{
+
+    // use important due to adblock hiding social buttons
+    display: flex !important;
+
+    a{
+
+         // use important due to adblock hiding social buttons
+        display: flex !important;
+
+        align-items: center;
+
+        color: black;
+
+        font-size: 18px;
+
+        padding: 10px;
+
+        margin-right: 10px;
+
+        text-decoration: none;
+
+        transition: all .3s ease-in;
+
+        border: 2px solid transparent;
+        
+
+        svg{
+
+            height:25px;
+            
+            margin-right: 5px;
+
+        }
+
+        &:hover{
+
+            border-color: black;
+            
+        }
+
+
+        
+
+    }
+
+
+    &.white{
+
+       a{
+
+            color: #fff;
+
+            svg{
+
+                fill: white;
+
+            }
+
+            &:hover{
+
+                border-color: #fff;
+                
+            }
+            
+       }
+
+
+    }
+
+}
